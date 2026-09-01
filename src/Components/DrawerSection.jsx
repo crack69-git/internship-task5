@@ -1,0 +1,37 @@
+import { Button, Drawer } from "@heroui/react";
+import React from "react";
+import { RiMenu2Line } from "react-icons/ri";
+
+const DrawerSection = () => {
+  return (
+    <Drawer>
+      <Button variant="ghost" className="max-lg:block hidden">
+        <RiMenu2Line />
+      </Button>
+      <Drawer.Backdrop>
+        <Drawer.Content placement="left">
+          <Drawer.Dialog>
+            <Drawer.Header>
+              <Drawer.Heading>Drawer Title</Drawer.Heading>
+            </Drawer.Header>
+            <Drawer.Body>
+              <p>
+                This is a bottom drawer built with React Aria's Modal component.
+                It slides up from the bottom of the screen with a smooth CSS
+                transition.
+              </p>
+            </Drawer.Body>
+            <Drawer.Footer>
+              <Button slot="close" variant="secondary">
+                Cancel
+              </Button>
+              <Button slot="close">Confirm</Button>
+            </Drawer.Footer>
+          </Drawer.Dialog>
+        </Drawer.Content>
+      </Drawer.Backdrop>
+    </Drawer>
+  );
+};
+
+export default DrawerSection;

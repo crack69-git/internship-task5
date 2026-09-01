@@ -3,22 +3,21 @@ import Image from "next/image";
 import React from "react";
 import { FaAngleDown, FaPlus } from "react-icons/fa";
 import { MdOutlineNotificationsActive } from "react-icons/md";
+import DrawerSection from "./DrawerSection";
 
 const NavabarSection = () => {
   return (
     <div className="border-2 font-mukta-malar">
-      <div className="w-11/12 mx-auto py-4 flex items-center justify-between">
+      <div className="w-11/12 mx-auto py-4 flex max-md:flex-col items-center justify-between">
         <div className="flex items-center gap-2">
+          <DrawerSection />
           <Image src="/logo.png" width={50} height={50} alt="Next.js Logo" />
           <p className="text-2xl font-bold font-tauri">North Star</p>
         </div>
-        <div></div>
-        <div className="flex items-center gap-4">
-          <div className="relative cursor-pointer">
+
+        <div className="flex items-center gap-4 max-md:mx-auto">
+          <div className="cursor-pointer">
             <MdOutlineNotificationsActive size={25} />
-            <div className="rounded-lg w-fit bg-yellow-900 text-white px-4 absolute -top-2 -left-13">
-              12
-            </div>
           </div>
           <Button className="bg-green-900 text-white">
             <FaPlus />

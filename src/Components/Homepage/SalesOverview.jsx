@@ -40,9 +40,9 @@ const SalesOverview = () => {
     </>
   );
   return (
-    <div className="col-span-3 border rounded-2xl p-4">
-      <div className="flex items-center justify-between">
-        <div>
+    <div className="col-span-3 max-md:col-span-5 border rounded-2xl p-4">
+      <div className=" flex max-md:flex-col items-center justify-between">
+        <div className="max-md:text-center">
           <h3 className="text-xl font-bold">Sales Overview</h3>
           <p className="text-gray-500 text-sm mb-2">
             Monthly Revenue Performance

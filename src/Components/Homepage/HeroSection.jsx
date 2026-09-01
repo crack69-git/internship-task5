@@ -61,7 +61,7 @@ const HeroSection = () => {
         </Select>
       </div>
 
-      <div className="flex items-center justify-start gap-4 ">
+      <div className="grid max-sm:grid-cols-1 max-md:grid-cols-2 grid-cols-4 gap-4 ">
         <Card className="w-full" variant="default">
           <Card.Header>
             <Card.Title className="flex flex-col gap-2 text-xl font-bold">

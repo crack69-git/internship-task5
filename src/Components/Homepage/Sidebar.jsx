@@ -31,7 +31,7 @@ const Sidebar = () => {
     </>
   );
   return (
-    <div className="flex flex-col w-72 h-full bg-gray-50 p-4 border-r border-b rounded-br-2xl min-h-screen">
+    <div className="flex flex-col w-72 h-full bg-gray-50 p-4 border-r border-b rounded-br-2xl min-h-screen max-lg:hidden">
       <p className="text-lg font-bold text-gray-700">Workshop</p>
       <SearchField name="search" className="mt-4">
         <SearchField.Group>
