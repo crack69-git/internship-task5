@@ -15,13 +15,13 @@ const TopCustomer = () => {
               OM
             </p>
             <div>
-              <p className="font-bold text-lg">Jhon Doe</p>
-              <p className="text-gray-600">jhondhoe@example.com</p>
+              <p className="font-bold text-[16px]">Jhon Doe</p>
+              <p className="text-gray-600 text-sm">jhondhoe@example.com</p>
             </div>
           </div>
           <div>
-            <p className="text-lg font-semibold text-gray-600">$1,000</p>
-            <p>24 Orders</p>
+            <p className="text-sm font-semibold text-gray-600">$1,000</p>
+            <p className="text-sm text-gray-600">24 Orders</p>
           </div>
         </div>
         <Separator className="my-2" />
@@ -32,14 +32,14 @@ const TopCustomer = () => {
                 GM
               </p>
               <div>
-                <p className="font-bold text-lg">Ethar Tuner</p>
-                <p className="text-gray-600">ethartuner@example.com</p>
+                <p className="font-bold text-[16px]">Ethar Tuner</p>
+                <p className="text-gray-600 text-sm">ethartuner@example.com</p>
               </div>
             </div>
           </div>
           <div>
-            <p className="text-lg font-semibold text-gray-600">$900</p>
-            <p>18 Orders</p>
+            <p className="text-sm font-semibold text-gray-600">$900</p>
+            <p className="text-sm text-gray-600">18 Orders</p>
           </div>
         </div>
         <Separator className="my-2" />
@@ -49,13 +49,13 @@ const TopCustomer = () => {
               LM
             </p>
             <div>
-              <p className="font-bold text-lg">Lamine Yamal</p>
-              <p className="text-gray-600">lamineyamal@example.com</p>
+              <p className="font-bold text-[16px]">Lamine Yamal</p>
+              <p className="text-gray-600 text-sm">lamineyamal@example.com</p>
             </div>
           </div>
           <div>
-            <p className="text-lg font-semibold text-gray-600">$500</p>
-            <p>10 Orders</p>
+            <p className="text-sm font-semibold text-gray-600">$500</p>
+            <p className="text-sm text-gray-600">10 Orders</p>
           </div>
         </div>
         <Link href="#" className="mt-4">
