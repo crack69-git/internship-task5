@@ -8,6 +8,7 @@ import SalesOverview from "./SalesOverview";
 import TopCategories from "./TopCategories";
 import RecentOrders from "./RecentOrders";
 import TopCustomer from "./TopCustomer";
+import { MdWavingHand } from "react-icons/md";
 
 const HeroSection = () => {
   const date = new Date();
@@ -40,11 +41,16 @@ const HeroSection = () => {
   );
   return (
     <div className="w-11/12 mx-auto my-5">
-      <p>{formattedDate}</p>
-      <p>Welcome USER</p>
+      <p className="font-bold text-gray-600">{formattedDate}</p>
+      <p className="font-bold text-4xl flex items-center gap-2">
+        Welcome, USER
+        <MdWavingHand className="text-gray-400" />
+      </p>
       <div className="flex items-center justify-between gap-4">
-        <p>This is what happening in your store today.</p>
-        <Select className="w-[256px]" placeholder="Filter">
+        <p className="text-gray-500 text-lg">
+          This is what happening in your store today.
+        </p>
+        <Select className="w-[256px] border rounded-xl " placeholder="Filter">
           <Select.Trigger>
             <Select.Value />
             <Select.Indicator />
@@ -58,12 +64,14 @@ const HeroSection = () => {
       <div className="flex items-center justify-start gap-4 ">
         <Card className="w-full" variant="default">
           <Card.Header>
-            <Card.Title>
-              <CgDollar />
+            <Card.Title className="flex flex-col gap-2 text-xl font-bold">
+              <div className="bg-gray-100 p-2 rounded-full text-gray-700 w-fit">
+                <CgDollar size={20} />
+              </div>
               Total Revenue
             </Card.Title>
             <Card.Description className="flex items-end justify-between gap-2">
-              <span>
+              <span className="text-lg font-bold flex items-center gap-1">
                 <CgDollar />
                 2,000
               </span>
@@ -73,61 +81,73 @@ const HeroSection = () => {
               </Chip>
             </Card.Description>
           </Card.Header>
-          <Card.Content>
+          <Card.Content className="text-gray-500 text-sm">
             <p>Compared to $74,830 last month</p>
           </Card.Content>
         </Card>
         <Card className="w-full" variant="default">
           <Card.Header>
-            <Card.Title>
-              <FaOpencart />
+            <Card.Title className="flex flex-col gap-2 text-xl font-bold">
+              <div className="bg-gray-100 p-2 rounded-full text-gray-700 w-fit">
+                <FaOpencart />
+              </div>
               Total Orders
             </Card.Title>
             <Card.Description className="flex items-end justify-between gap-2">
-              <span>1429</span>
+              <span className="text-lg font-bold flex items-center gap-1">
+                1429
+              </span>
               <Chip className="bg-green-900 text-white">
                 <FaArrowTrendUp />
                 +2%
               </Chip>
             </Card.Description>
           </Card.Header>
-          <Card.Content>
+          <Card.Content className="text-gray-500 text-sm">
             <p>Compared to 1,320 last month</p>
           </Card.Content>
         </Card>
         <Card className="w-full" variant="default">
           <Card.Header>
-            <Card.Title>
-              <FaRegUser />
+            <Card.Title className="flex flex-col gap-2 text-xl font-bold">
+              <div className="bg-gray-100 p-2 rounded-full text-gray-700 w-fit">
+                <FaRegUser />
+              </div>
               Active Customers
             </Card.Title>
             <Card.Description className="flex items-end justify-between gap-2">
-              <span>8739</span>
+              <span className="text-lg font-bold flex items-center gap-1">
+                8739
+              </span>
               <Chip className="bg-green-900 text-white">
                 <FaArrowTrendUp />
                 +8.4%
               </Chip>
             </Card.Description>
           </Card.Header>
-          <Card.Content>
+          <Card.Content className="text-gray-500 text-sm">
             <p>Compared to 8,172 last month</p>
           </Card.Content>
         </Card>
         <Card className="w-full" variant="default">
           <Card.Header>
-            <Card.Title>
-              <SiConvertio />
+            <Card.Title className="flex flex-col gap-2 text-xl font-bold">
+              <div className="bg-gray-100 p-2 rounded-full text-gray-700 w-fit">
+                <SiConvertio />
+              </div>
               Conversion Rate
             </Card.Title>
             <Card.Description className="flex items-end justify-between gap-2">
-              <span>3.24%</span>
+              <span className="text-lg font-bold flex items-center gap-1">
+                3.24%
+              </span>
               <Chip className="bg-green-900 text-white">
                 <FaArrowTrendUp />
                 -3.5%
               </Chip>
             </Card.Description>
           </Card.Header>
-          <Card.Content>
+          <Card.Content className="text-gray-500 text-sm">
             <p>Compared to 3.30% last month</p>
           </Card.Content>
         </Card>
