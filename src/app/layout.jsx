@@ -32,13 +32,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html
-      supresshydrationwarning="true"
+      suppressHydrationWarning="true"
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${tauri.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <NavabarSection />
-        <main className="flex flex-1 ">
+        <main className="flex flex-1 h-full">
           <Sidebar />
           <div className="flex-1">{children}</div>
         </main>

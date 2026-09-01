@@ -6,6 +6,8 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 import { SiConvertio } from "react-icons/si";
 import SalesOverview from "./SalesOverview";
 import TopCategories from "./TopCategories";
+import RecentOrders from "./RecentOrders";
+import TopCustomer from "./TopCustomer";
 
 const HeroSection = () => {
   const date = new Date();
@@ -134,6 +136,8 @@ const HeroSection = () => {
       <div className="grid grid-cols-5 gap-4">
         <SalesOverview />
         <TopCategories />
+        <RecentOrders />
+        <TopCustomer />
       </div>
     </div>
   );
