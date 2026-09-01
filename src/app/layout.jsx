@@ -7,6 +7,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import NavabarSection from "@/Components/NavabarSection";
+import Sidebar from "@/Components/Homepage/Sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +38,10 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <NavabarSection />
-        <main className="flex-grow">{children}</main>
+        <main className="flex flex-1 ">
+          <Sidebar />
+          <div className="flex-1">{children}</div>
+        </main>
       </body>
     </html>
   );
